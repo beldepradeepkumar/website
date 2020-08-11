@@ -1,0 +1,87 @@
+<div class="modal fade" id="requestdemo" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="productsubheader">Request for Demo</p>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <form name="vehicleservice" (ngSubmit)="vehicleservice.form.valid && requestfordemo(vehicleservice)"  #vehicleservice="ngForm" novalidate >
+              <div class="row">
+              <div class="col-sm-4">
+              
+                <div class="form-group">
+                  <div class="form-group" [ngClass]="{ 'has-error': vehicleservice.submitted && !firstName.valid }">
+                  <label for="firstName">First name</label>
+                  <input type="text" class="form-control" oninput="validity.valid||(value='');"  name="firstName"  [(ngModel)]="demorequest.firstName"   #firstName="ngModel"   required />
+                  <div *ngIf="vehicleservice.submitted && !firstName.valid" class="help-block">required</div>
+                </div>
+                </div>
+              
+             </div>
+             <div class="col-sm-4">
+              <div class="form-group">
+                <div class="form-group" [ngClass]="{ 'has-error': vehicleservice.submitted && !lastName.valid }">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" oninput="validity.valid||(value='');"  name="lastName"  [(ngModel)]="demorequest.lastName"   #lastName="ngModel"   required />
+                <div *ngIf="vehicleservice.submitted && !lastName.valid" class="help-block">required</div>
+              </div>
+              </div>
+             </div>
+             <div class="col-sm-4">
+              <div class="form-group">
+                <div class="form-group" [ngClass]="{ 'has-error': vehicleservice.submitted && !mobileNumber.valid }">
+                <label for="mobileNumber">Mobile number</label>
+                <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  minlength=10 maxlength="10" name="mobileNumber"  [(ngModel)]="demorequest.mobileNumber"   #mobileNumber="ngModel"   required />
+                <div *ngIf="vehicleservice.submitted && !mobileNumber.valid" class="help-block">required</div>
+              </div>
+              </div>
+             </div>
+            </div>
+             <div class="row">
+             <div class="col-sm-4">
+             
+                <div class="form-group" [ngClass]="{ 'has-error': vehicleservice.submitted && !email.valid }">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" oninput="validity.valid||(value='');"  name="email"  [(ngModel)]="demorequest.email"   #email="ngModel"   required />
+                <div *ngIf="vehicleservice.submitted && !email.valid" class="help-block">required</div>
+              
+              </div>
+             </div>
+             <div class="col-sm-4">
+              <div class="form-group" [ngClass]="{ 'has-error': vehicleservice.submitted && !demoRequestFor.valid }">
+                <label >Select Prodcut Type</label>
+                <select class="form-control" name="demoRequestFor"  [(ngModel)]="demorequest.demoRequestFor"   #demoRequestFor="ngModel"   required >
+                  <option value="" disabled></option>
+                  <option value="Vehilce Tracking System">Vehicle Tracking System</option>
+                  <option value="Kid Tracker">Kid Tracker</option>
+                </select>
+                <div *ngIf="vehicleservice.submitted && !demoRequestFor.valid" class="help-block">required</div>
+              </div>
+             </div>
+             <div class="col-sm-4">
+              <div class="form-group">
+              
+                <button class="btn btn-primary" style="margin-top: 22px;
+                float: right;">Submit</button>
+              </div>
+             </div>
+            </div>
+            </form>
+            <div class="col-sm-12" *ngIf="hideshow">
+              <div class="alert alert-success">
+                <p style="font-size: 16px;">Request accepted successfully. One of our team will be in contact with you shortly...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+      
+    </div>
+  </div>

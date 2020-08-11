@@ -1,0 +1,61 @@
+
+    <nav class="navbar navbar-inverse">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" routerLink="/home"><img src="assets/images/logo.png" alt="Intellogo logo"/></a>
+      </div>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li routerLinkActive="active"><a routerLink="/home" >Home</a></li>
+              <li routerLinkActive="active"><a routerLink="/aboutus" >About us</a></li>
+              <li class="dropdown" routerLinkActive="active">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Products </a>
+                  <ul class="dropdown-menu">
+                      <li routerLinkActive="active"><a routerLink="/vehicletracking" >Vehicle Tracking System</a></li>
+                      <li routerLinkActive="active"><a routerLink="/kidtracker" >Kid Tracker</a></li>
+                     
+                  </ul>
+              </li>
+              <li routerLinkActive="active"><a routerLink="/solutions" >Solutions</a></li>
+              <li routerLinkActive="active"><a routerLink="/contactus" >Contact us</a></li>
+              <li> <button type="button" class="btn btn-primary navbutton" data-toggle="modal" data-target="#requestdemo">Request for a Demo</button></li>
+          </ul>
+       
+      </div>
+  </nav>
+
+  <app-requestdemo></app-requestdemo>
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-white fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Intellogo logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div style="padding-bottom: 70px;"></div> -->

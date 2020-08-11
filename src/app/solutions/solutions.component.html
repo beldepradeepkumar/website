@@ -1,0 +1,118 @@
+<app-header></app-header>
+<div style="padding-bottom: 65px;"></div>
+<div class="row rowdarkbgfull bannertextcenter aboutrowheight">
+    <div class="col-sm-12   ">
+        <div class="col-sm-12 bannertextcenter">
+    <div class="col-sm-6 ">
+        
+       <img class="imagedata" src= "assets/images/solutions_fleet.png" alt="" />
+    </div>
+    <div class="col-sm-6">
+       
+            
+            <p class="productsubheader">Fleet Management</p>
+            <div class="spaceten"></div>
+            <p class="productsubtext">For multiple vehicle owners and travels business owners, this device helps to monitor and manage all your vehicles in real time. Analysis of each vehicle provides insights to plan <span class="textcolor" data-target="#solutions" data-toggle="modal" (click)="textinpopup('fleetmanagement')">see more…</span></p>
+            <div class="spaceten"></div>
+            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#requestdemo">Request for a Demo</button>
+    </div>
+</div>
+<!-- <div class="col-sm-12">
+<div class="spacetwenty"></div>
+</div> -->
+</div>
+</div>
+<div class="row rowwhitebgfull bannertextcenter aboutrowheight">
+    <div class="col-sm-12 ">
+        <div class="col-sm-12 bannertextcenter">
+            <div class="col-sm-6 col-lg-push-6 mx-auto">
+       
+                <img class="imagedata" src= "assets/images/school_management.png" alt="" />
+                
+        </div>
+        <div class="col-sm-6 col-lg-pull-6 mx-auto">
+            
+            <p class="productsubheader">School Bus Management</p>
+            <div class="spaceten"></div>
+            <p class="productsubtext">Safe transportation of school children is a big challenge to school management. School authorities are very much concerned about student’s safety <span class="textcolor" data-target="#solutions" data-toggle="modal" (click)="textinpopup('schoolbus')">see more…</span></p>
+            <div class="spaceten"></div>
+            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#requestdemo">Request for a Demo</button>
+        </div>
+ 
+</div>
+<!-- <div class="col-sm-12">
+<div class="spacetwenty"></div>
+</div> -->
+</div>
+</div>
+<div class="row rowdarkbgfull bannertextcenter aboutrowheight">
+    <div class="col-sm-12 ">
+        <div class="col-sm-12 bannertextcenter">
+    <div class="col-sm-6">
+       
+       <img class="imagedata" src= "assets/images/promt_vehicle.png" alt="" />
+    </div>
+    <div class="col-sm-6">
+       
+            
+            <p class="productsubheader">Prompt Vehicle Servicing Solutions</p>
+            <div class="spaceten"></div>
+            <p class="productsubtext">Servicing of a vehicle promptly minimises the maintenance costs. As people are busy with their life, and they could not spare time for servicing the vehicle regularly, sudden breakdowns <span class="textcolor" data-target="#solutions" data-toggle="modal" (click)="textinpopup('promtvehicle')">see more…</span></p>
+            <div class="spaceten"></div>
+            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#requestdemo">Request for a Demo</button>
+    </div>
+</div>
+<div class="col-sm-12">
+<div class="spacetwenty"></div>
+</div>
+</div>
+</div>
+<div class="row rowwhitebgfull bannertextcenter aboutrowheight">
+    <div class="col-sm-12 ">
+        <div class="col-sm-12 bannertextcenter">
+            <div class="col-sm-6 col-lg-push-6 mx-auto">
+       
+                <img class="imagedata" src= "assets/images/insurance.png" alt="" />
+                
+        </div>
+        <div class="col-sm-6 col-lg-pull-6 mx-auto">
+            <p class="productsubheader">Insurance Telematics Solutions</p>
+            <div class="spaceten"></div>
+            <p class="productsubtext">Vehicle insurance has become one added   investment included in vehicle purchase. But, one can reduce the insurance premium of their vehicle by following some <span class="textcolor" data-target="#solutions" data-toggle="modal" (click)="textinpopup('insurance')">see more…</span></p>
+            <div class="spaceten"></div>
+            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#requestdemo">Request for a Demo</button>
+       
+        </div>
+ 
+</div>
+
+</div>
+</div>
+
+<div class="modal fade" id="solutions" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close productsubheader" data-dismiss="modal">&times;</button>
+          <p class="modal-title productsubheader">{{modeldata.title}}</p>
+         
+        </div>
+        <div class="modal-body">
+          
+          <p class="productsubtext">{{modeldata.description}}</p>
+          <div class="spaceten"></div>
+          <button type="button" class="btn btn-primary " data-dismiss="modal" data-toggle="modal" data-target="#requestdemo">Request for a Demo</button>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<app-footer></app-footer>

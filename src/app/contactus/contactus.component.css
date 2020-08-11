@@ -1,0 +1,14 @@
+.iconwidth{
+    width: 3%;
+}
+.subheader{
+    color: rgb(0,0,0);
+    font-size: 16px;
+}
+.subheadertext{
+    color: rgb(56,56,56);
+    font-size: 16px;
+}
+p {
+    line-height: 23pt;
+}
